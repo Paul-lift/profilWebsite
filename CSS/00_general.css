@@ -1,0 +1,154 @@
+:root {
+    --main-text-color: #dde3e7;
+    --main-background-color: #001155;
+    --linear-gradient-background-pinkVioletBlueBlack: linear-gradient(304deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(255, 0, 90, 1) 100%);
+    --linear-gradient-background-lightBlueBlueBlack: linear-gradient(304deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    --swisscom-light-blue: #1781e3;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    color: #001155;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    color: var(--main-text-color);
+    margin-bottom: 0vw;
+
+}
+
+h1 :not(#startPageTitle),
+projects h1,
+references h1,
+contactAndInterests h1,
+aboutMe h1,
+skillsandlanguages h1 {
+    color: var(--main-text-color);
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2vw;
+    color: var(--main-text-color);
+}
+
+h3 {
+    font-size: 1.5vw;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+p,
+article,
+info,
+skills {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: var(--main-text-color);
+    justify-content: center;
+    text-align: center;
+}
+
+p {
+    max-width: 66vw;
+}
+
+a {
+    color: #dde3e7;
+    font-weight: 600;
+}
+
+startPage,
+aboutMe,
+projects,
+skillsAndLanguages,
+contactAndInterests,
+references {
+    background-color: var(--main-background-color);
+    padding-bottom: 7vw;
+}
+
+aboutMe,
+projects,
+skillsAndLanguages,
+contactAndInterests {
+    padding-top: 3vw;
+}
+
+aboutMe article,
+#skillscontainer,
+contactAndInterests .list,
+#skills-HTML-German,
+#skills-CSS-English,
+#skills-NetworkedThinking-France {
+    margin-left: 9vw;
+    margin-right: 9vw;
+}
+
+projects,
+#projectsTitle,
+#projectsContainer,
+.projectsBlock,
+skillsAndLanguages,
+#skillsAndLanguagesTitle,
+#contactTitle,
+info,
+#interests,
+references,
+referencesTitle,
+references a {
+    flex-direction: column;
+}
+
+
+/* RESPONSIVNESS */
+
+@media (max-width: 1200px) {
+
+    #contactTitle h1,
+    #interests h1,
+    #aboutMe h1,
+    #projects h1,
+    #skillsAndLanguagesHeadOne,
+    references h1,
+    h1 {
+        font-size: 7vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+        margin-bottom: 0vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        margin-left: 4vw;
+        margin-right: 4vw;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    article {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 5vw;
+        text-align: center;
+        font-size: 4vw;
+    }
+}

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --mainBorderRadius: 1.5em
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(129, 195, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div.display {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 1.75em;
+    color: white;
+}
+
+.calculator {
+    width: 22vw;
+    height: 65vh;
+    background-color: black;
+    border-radius: var(--mainBorderRadius);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.display {
+    grid-area: 1 / 1 / 3 / 5;
+    background-color: black;
+    margin: 1em;
+    border-radius: var(--mainBorderRadius);
+}
+
+.buttons {
+    grid-area: 3 / 1 / 9 / 5;
+    background-color: black;
+    margin: 1em;
+    border-radius: var(--mainBorderRadius);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+button {
+    text-align: center;
+    margin: 0.125em;
+    border-radius: 0.5em;
+    border-style: none;
+    color: white;
+    font-size: 1.25em;
+}
+
+/*Numbers Formatting*/
+
+.numbers {
+    background-color: #3B3B3B;
+    border-style: solid;
+    border-color: #313131;
+}
+
+.numbers:hover {
+    background-color: #323232;
+    border-style: solid;
+    border-color: rgb(34, 34, 34);
+}
+
+.numbers:active {
+    background-color: #282828;
+    color: #B6B6B6;
+    border-style: solid;
+    border-color: #1d1d1d;
+}
+
+/*Operators Formatting*/
+
+.operators {
+    background-color: rgb(0, 89, 255);
+    border-style: solid;
+    border-color: rgb(3, 77, 216);
+}
+
+.operators:hover {
+    background-color: rgb(0, 65, 187);
+    border-style: solid;
+    border-color: rgb(1, 57, 161);
+}
+
+.operators:active {
+    background-color: rgb(0, 54, 155);
+    color: #8c8fb4;
+    border-style: solid;
+    border-color: rgb(0, 47, 133);
+}
+
+/*Organizers Formatting*/
+
+.organizers {
+    background-color: #B6B6B6;
+    border-style: solid;
+    border-color: #9e9e9e;
+}
+
+.organizers:hover {
+    background-color: #9e9e9e;
+    border-style: solid;
+    border-color: #8d8d8d;
+}
+
+.organizers:active {
+    background-color: #8d8d8d;
+    color: #dbdbdb;
+    border-style: solid;
+    border-color: #6e6e6e;
+}
+
+/*Grid Coordinates for all Buttons*/
+
+.number0 {
+    grid-area: 6 / 2 / 7 / 3;
+}
+
+.number1 {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.number2 {
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.number3 {
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+.number4 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.number5 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.number6 {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.number7 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.number8 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.number9 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.comma{
+    grid-area: 6 / 1 / 7 / 2;
+}
+
+.equal {
+    grid-area: 6 / 4 / 7 / 5;
+}
+
+.addition {
+    grid-area: 5 / 4 / 6 / 5;
+}
+
+.subtraction {
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+.division {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.multiply {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.delete {
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.clear {
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.openingBracket{
+    grid-area: 1 / 3 / 2 / 4; 
+}
+
+.closingBracket{
+    grid-area: 1 / 4 / 2 / 5;
+}

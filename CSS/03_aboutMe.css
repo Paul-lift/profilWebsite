@@ -1,0 +1,40 @@
+aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-margin-top: 10vw;
+}
+
+aboutMe article {
+    position: relative;
+    transition: transform 0.1s ease-out;
+}
+
+#aboutMeLine {
+    border-top: 0.4vw solid #5944c6;
+    height: 0px;
+    width: 8vw;
+}
+
+/*PARALLAX*/
+
+
+#backGround3 {
+    background: var(--linear-gradient-background-pinkVioletBlueBlack);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30vw;
+}
+
+/*Responsivness*/
+
+@media (max-width: 1200px) {
+
+    #aboutMeLine {
+        border-width: 0.75vw;
+        width: 15vw;
+    }
+
+}

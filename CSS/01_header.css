@@ -1,0 +1,66 @@
+header {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vw;
+    position: relative;
+    z-index: 1; 
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    filter: drop-shadow(0 4mm 4mm #0000005d);
+}
+
+#PaulBot {
+    font-size: 1.75vw;
+    transition: 0.5s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5em;
+    margin-right: 3.5em;
+    font-size: 1.25vw;
+    transition: 0.5s;
+}
+
+#PaulBot:hover {
+    color: var(--swisscom-light-blue);
+    font-weight: 600;
+    font-size: 2.5vw;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: var(--swisscom-light-blue);
+    font-weight: 600;
+    font-size: 1.75vw;
+    transition: 0.5s;
+}
+
+/*RESPONSIVNESS*/
+
+@media (max-width: 1200px) {
+
+    #top {
+        scroll-margin-top: 100vw;
+    }
+
+    nav a {
+        font-size: 2.25vw;
+    }
+
+    #PaulBot {
+        font-size: 2.75vw;
+    }
+
+}

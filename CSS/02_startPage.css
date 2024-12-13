@@ -1,0 +1,150 @@
+/*Oberer Teil*/
+
+#startPageTitleBackground {
+    height: 25vw;
+    width: 100%;
+    position: relative;
+}
+
+#backGround {
+    background: var(--linear-gradient-background-pinkVioletBlueBlack);
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#startPageTitle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-right: 14vw;
+    margin-left: 52vw;
+    bottom: 5px;
+    font-size: 2vw;
+}
+
+#startPageTitle span{
+    color: #1781e3;
+}
+
+#startPageTitle p {
+    margin-top: 0vw;
+}
+
+#nameLine {
+    border-top: 0.4vw solid #1781e3;
+    height: 0px;
+    width: 5vw;
+}
+
+/*Unterer Teil*/
+
+startPage {
+    display: flex;
+    justify-content: center;
+}
+
+startPage p {
+    display: flex;
+    margin-left: 52vw;
+    margin-right: 14vw;
+}
+
+#profilePictureContainer {
+    position: absolute;
+    transform: translate(-20vw, -15vw);
+    filter: drop-shadow(0 4mm 4mm rgba(0, 0, 0, 0.459));
+    display: flex;
+}
+
+#profilePicture {
+    width: 28vw;
+    border-radius: 2vw;
+}
+
+#linkedInAndIntranetIcons a {
+    width: 3vw;
+    display: flex;
+    flex-direction: column-reverse;
+    transition: 0.5s;   
+}
+
+#linkedInAndIntranetIcons a:hover {
+    width: 5vw;
+    transition: 0.5s;
+}
+
+#linkedInAndIntranetIcons {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*PARALLAX*/
+
+#backGround2 {
+    background:var(--linear-gradient-background-lightBlueBlueBlack);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30vw;
+}
+
+/*RESPONSIVNESS*/
+
+@media (max-width: 1200px) {
+
+    /*Startpage Head*/
+
+    #startPageTitleBackground h1 {
+        margin-left: 10vw;
+    }
+  
+    #startPageTitle {
+        transform: translate(35vw, 10vw);
+        margin-left: 7.75vw;
+    }
+
+    startPage article {
+        margin-top: 32vw;
+    }
+
+    #nameLine {
+        border-width: 0.75vw;
+        width: 7vw;
+        margin-left: 10.125vw;
+    }
+
+    #job {
+        font-size: 2.75vw;
+        margin-left: 10vw;
+        display: flex;
+        align-items: start;
+    }
+
+    /*StartPage Foot*/
+
+    startPage p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #profilePictureContainer {
+        top: 0;
+        margin-top: 30vw;
+    }
+
+    #profilePicture {
+        width: 45vw;
+    }
+
+    #linkedInAndIntranetIcons a {
+        width: 5.5vw;
+    }
+
+}
