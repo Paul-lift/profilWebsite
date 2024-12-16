@@ -8,7 +8,7 @@ function typeWriter() {
   if (character <= texts[currentText].length) {
     textElement.textContent = texts[currentText].substring(0, character);
     character++;
-    setTimeout(typeWriter, 100);
+    setTimeout(typeWriter, 150);
   } else {
     deleteText();
   }
