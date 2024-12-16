@@ -8,7 +8,7 @@ function typeWriter() {
   if (character <= texts[currentText].length) {
     textElement.textContent = texts[currentText].substring(0, character);
     character++;
-    setTimeout(typeWriter, 50);
+    setTimeout(typeWriter, 100);
   } else {
     deleteText();
   }
@@ -18,7 +18,7 @@ function deleteText() {
   if (character != 0) {
     character--;
     textElement.textContent = texts[currentText].substring(0, character);
-    setTimeout(deleteText, 50);
+    setTimeout(deleteText, 100);
   } else {
     currentText += 1;
     if(currentText == texts.length){
