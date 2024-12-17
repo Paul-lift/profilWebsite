@@ -1,6 +1,7 @@
 projects {
     display: flex;
     scroll-margin-top: 8vw;
+    
 }
 
 /*HEADER ONE + UNDERLINE*/
@@ -68,11 +69,11 @@ projects {
 }
 
 .projectsBlock.showprojectsBlock {
-    transform: translateX(60%);
+    transform: translateX(0%);
 }
 
 .projectsBlock.showprojectsBlock:nth-child(even) {
-    transform: translateX(-60%);
+    transform: translateX(0%);
 }
 
 /*PARALLAX*/
