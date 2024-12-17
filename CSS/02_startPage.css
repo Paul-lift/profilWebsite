@@ -80,6 +80,7 @@ startPage p {
 #linkedInAndIntranetIcons a:hover {
     width: 5vw;
     transition: 0.5s;
+    filter: drop-shadow(0 0 1px) drop-shadow(0 0 25px);
 }
 
 #linkedInAndIntranetIcons {
