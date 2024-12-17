@@ -1,16 +1,16 @@
 header {
-    background-color: #333333;
+    border-radius: 3em;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px #f1f0f05c;
     display: flex;
     justify-content: space-between;
     padding: 1.5vw;
-    position: relative;
-    z-index: 1; 
-    overflow: hidden;
     position: fixed;
-    top: 0;
-    width: 100%;
+    top: 2%;
+    left: 50%; /* Startpunkt horizontal bei der Mitte */
+    transform: translateX(-50%); /* Verschiebung um die Hälfte der Breite nach links */
     z-index: 2;
-    filter: drop-shadow(0 4mm 4mm #0000005d);
+    width: 80vw;
 }
 
 #PaulBot {
