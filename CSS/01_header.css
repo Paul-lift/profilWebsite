@@ -34,14 +34,14 @@ header a {
 }
 
 #PaulBot:hover {
-    color: var(--swisscom-light-blue);
+    color: #ff0073;
     font-weight: 600;
     font-size: 2.5vw;
     transition: 0.5s;
 }
 
 nav a:hover {
-    color: var(--swisscom-light-blue);
+    color: #ff0073;
     font-weight: 600;
     font-size: 1.75vw;
     transition: 0.5s;
